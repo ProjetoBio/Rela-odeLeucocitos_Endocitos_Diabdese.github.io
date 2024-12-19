@@ -196,4 +196,17 @@ footer {
 
 .detailed-text table tr:hover {
     background-color: #f1f1f1;
+}   
+
+@media (max-width: 768px) {
+    .detailed-text table {
+        width: 100%; /* Garante que ocupe toda a largura */
+        font-size: 14px; /* Ajusta o tamanho do texto */
+    }
+
+    .detailed-text table th, .detailed-text table td {
+        padding: 6px 8px; /* Reduz o padding */
+        text-align: center; /* Centraliza texto em dispositivos menores */
+    }
 }
+
