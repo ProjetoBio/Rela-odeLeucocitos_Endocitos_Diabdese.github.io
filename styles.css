@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    
+    background-color: #6200ea;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.carousel {
+    
+    max-width: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 100%;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.carousel-item .carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.carousel-item:hover .carousel-text {
+    transform: scale(1.1);
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.detailed-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.detailed-text h2 {
+    color: #6200ea;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.detailed-text p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    
+}  
+
+
+footer .instagram {
+    text-align: left;/* Alinha o Instagram à direita */
+    color: white;
+}
+footer a {
+    text-decoration: none; /* Remove o sublinhado */
+
+        }
+
+a .instagram { 
+    color:white ; 
+    text-align: center;
+}
+.intro {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 90%; /* Limita a largura para caber em telas menores */
+    
+   
+    
+    
+    color: #333333;
+}
+
+.intro h2 {
+    font-size: 24px;
+    color: #6200ea; /* Cor roxa do tema */
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 20px; /* Diminui o tamanho do título em telas menores */
+    }
+
+    .intro p {
+        font-size: 14px; /* Ajusta o texto para não ficar apertado */
+    }
+}
+
+.detailed-text table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.detailed-text table th,
+.detailed-text table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.detailed-text table th {
+    background-color: #6200ea;
+    color: white;
+    font-weight: bold;
+}
+
+.detailed-text table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.detailed-text table tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .detailed-text table {
+        width: 100%; /* Garante que ocupe toda a largura */
+        font-size: 14px; /* Ajusta o tamanho do texto */
+    }
+
+    .detailed-text table th, .detailed-text table td {
+        padding: 6px 8px; /* Reduz o padding */
+        text-align: center; /* Centraliza texto em dispositivos menores */
+    }
+} 
+
+.detailed-text img {
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 100%; /* Ajusta a largura para caber no contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas, opcional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona um efeito de sombra */
+    margin-bottom: 15px; /* Espaçamento inferior para separar da tabela ou texto */
+}
+
+/* Ajustes Específicos para Dispositivos Móveis */
+@media (max-width: 768px) {
+    .detailed-text img {
+        max-width: 90%; /* Reduz ligeiramente a largura em telas pequenas */
+    }
+} 
+
+
+.detailed-text h3 {
+    color: #6200ea;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.detailed-text ol,
+.detailed-text ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.detailed-text li {
+    margin-bottom: 10px;
+}
+
+.detailed-text strong {
+    color: #6200ea;
+} 
+
+/* Estilo do botão */
+.back-to-top {
+    position: fixed;
+    bottom: 20px; /* Distância do rodapé */
+    right: 20px; /* Distância da borda direita */
+    z-index: 1000; /* Ficar acima de outros elementos */
+}
+
+.back-to-top a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #007bff; /* Azul padrão */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-top a i {
+    margin-right: 8px; /* Espaço entre a seta e o texto */
+    font-size: 18px;
+}
+
+.back-to-top a:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+    transform: scale(1.1); /* Efeito de aumento */
+}
