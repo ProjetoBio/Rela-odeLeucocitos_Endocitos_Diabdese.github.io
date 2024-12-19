@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nome site</h1>
+    </header>
+
+    <div class="intro">
+        <h2>Introduçao</h2>
+        <p>
+            Este projeto tem como objetivo investigar a relação entre leucócitos, endocitose e diapedese, destacando como esses processos atuam em conjunto para proteger o organismo contra infecções e outras ameaças. A pesquisa busca compreender a importância dessas funções no sistema imunológico e como possíveis falhas nesses mecanismos podem contribuir para o desenvolvimento de doenças inflamatórias ou imunológicas.
+        </p>
+        <p>
+            Outro processo fundamental para a ação eficaz dos leucócitos é a diapedese, que possibilita o deslocamento dessas células para fora dos vasos sanguíneos em direção aos tecidos afetados. Esse movimento é crucial para que os leucócitos cheguem rapidamente ao local de inflamação ou infecção, garantindo uma resposta imune eficiente.
+        </p> 
+         
+        <P>  
+            
+            Por meio deste estudo, espera-se aprofundar a compreensão sobre os mecanismos que envolvem os leucócitos, investigando como a interação entre endocitose e diapedese contribui para a imunidade inata e adaptativa. Além disso, serão discutidas as implicações de alterações nesses processos para a saúde humana.
+
+        </P>
+        
+    </div>
+    
+    
+    
+    <div class="container">
+        <!-- Carrossel -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-item" onclick="showDetailedText(1)">
+                    <img src="https://stjude.scene7.com/is/image/stjude/istock-486671946-neutrophil-white-blood-cell?wid=500" alt="Imagem 1">
+                    <div class="carousel-text">Caneta Azul</div>
+                </div>
+                <div class="carousel-item" onclick="showDetailedText(2)">
+                    <img src="https://th.bing.com/th/id/R.d5ffc9ae0934dc32e0f298e8fbc9e6e8?rik=RRbRQtTTkiyUPA&riu=http%3a%2f%2fmedicine.academic.ru%2fpictures%2fmedicine%2f447.jpg&ehk=CJA3GzhM7bBslvAyc9o8jOrOg4a4dok587ZyAukyvA0%3d&risl=&pid=ImgRaw&r=0" alt="Imagem 2">
+                    <div class="carousel-text">Olha, Se Você Não Me Ama</div>
+                </div>
+                <div class="carousel-item" onclick="showDetailedText(3)">
+                    <img src="https://th.bing.com/th/id/OIP.Vy3c_5OxlMN0Fq0PI65ndgHaDt?rs=1&pid=ImgDetMain" alt="Imagem 3">
+                    <div class="carousel-text">Parabéns</div>
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button id="prev">◀</button>
+                <button id="next">▶</button>
+            </div>
+        </div>
+
+        <!-- Texto detalhado -->
+        <div id="detailed-text" class="detailed-text"></div>
+    </div>
+
+    <footer>
+        <p>&copy; Projeto Bio IFRN</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
