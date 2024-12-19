@@ -92,9 +92,13 @@ header {
 }
 
 .detailed-text {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que ocupe pelo menos a altura total da tela */
     padding: 20px;
-    display: none;
+    box-sizing: border-box;
 }
 
 .detailed-text h2 {
